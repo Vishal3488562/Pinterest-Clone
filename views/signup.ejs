@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="manifest" href="images/site.webmanifest">
+  <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+  <meta nam e="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pinterest</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <script src="https://kit.fontawesome.com/14f67ef9ae.js" crossorigin="anonymous"></script>
+</head>
+<style>
+  body{
+    background-image: url(/images/Desktop\ Screenshot\ 2023.12.14\ -\ 21.56.26.82.png);
+  }
+</style>
+<body>
+  <div class="navbar">
+  <nav>
+    <img src="/images/PINS_BIG.png" alt="">
+    <a href="/" class="upbtn" style="background-color: #f30d19; color: #fff; text-decoration: none; transition: background-color 0.3s;"
+   onmouseover="this.style.backgroundColor='#df0812'" onmouseout="this.style.backgroundColor='#f30d19'">
+  Log In
+</a>
+
+  </nav>
+  </div>
+  <div class="container">
+    <div class="content">
+      <!--pinterest logo-->
+      <img src="https://i.pinimg.com/originals/d3/d1/75/d3d175e560ae133f1ed5cd4ec173751a.png" alt="pin logo" class="img1" />
+      <p class="header">Welcome to Pinterest</p> 
+      
+
+    <form action="/register" method="post">
+
+      <label for="fullname" style="float: left; padding-left: 10px; font-size: 14px;">Fullname</label>
+      <input type="text" placeholder="Fullname" name="fullname" class="detail" id="fullname"/><br />
+
+      <label for="username" style="float: left; padding-left: 10px; font-size: 14px;">Username</label>
+      <input type="text" placeholder="Username" name="username" class="detail" id="username"/><br />
+
+      <label for="email-address" style="float: left; padding-left: 10px; font-size: 14px;">Email address</label>
+      <input type="email" placeholder="Email" name="email" class="detail" id="email-address"/><br />
+
+      <label for="password" style="float: left; padding-left: 10px; font-size: 14px;">Password</label><br />
+      <input type="password" placeholder="Password" name="password" class="detail" id="password"/>
+      
+      <input type="submit" class="btn int" value="Sign Up">
+    </form>
+
+      <a href="/forgot" class="h4">Forgotten your password?</a><br><br>
+
+      <p class="or" style="margin-top: -5px; margin-bottom: -10px;">OR</p><br>
+      <button class="btn fbk">
+        <i
+          class="fab fa-facebook fa-lg"
+          style="color: white; padding-right: 10px"
+        ></i
+        ><a href="#">Continue with Facebook</a></button
+      ><br />
+      <button class="btn ggl">
+        <i
+          class=" google-logo fab fa-google"
+          style="padding-right: 25px"
+        ></i
+        ><a href="#">Continue with Google</a>
+      </button>
+
+      <footer>
+        <p>
+          By continuing, you agree to Pinterest's
+          <b>Terms of Service, Privacy policy.</b>
+        </p>
+        <hr />
+        <p>Already on Pinterest? <a href="/">Log In</a></p>
+      </footer>
+    </div>
+  </div>
+  
+
+</body>
+</html>

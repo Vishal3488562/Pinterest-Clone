@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinterest</title>
+    <link rel="stylesheet" href="/stylesheets/feed.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.7.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    
+  <nav class="flex items-center justify-between py-[10px] px-[40px] w-full bg-white">
+    <div class="logo">
+      <img class="w-[200px]" src="/images/PINS_BIG.png" alt="">
+    </div>
+    <div class="link flex gap-10 justify-center items-center font-gilroy">
+        <a class="font-medium text-base" href="/profile">Profile</a>
+        <a class="font-medium text-base" href="/feed">Feed</a>
+        <a href="/logout" class="upbtn px-[15px] py-[5px] bg-red-700 hover:bg-red-800 transition-bg duration-300 ease-in-out" style="color: #fff; font-size: 16px;
+        font-weight: 500; border-radius: 20px; text-decoration: none; transition: background-color 0.3s;">
+        Log out
+        </a>
+    </div>
+  
+    </nav> 
+     
+   <div class=" container profile w-full min-h-screen bg-slate-100 text-gray-800 pt-1 mt-20">
+         
+     
+    <% posts.forEach(function(elem)  { %> 
+         
+     <div class="box bg-white overflow-hidden">
+                   <a class="w-full h-full object-cover" href="/images/uploads/<%= elem.image %>">
+                   <img class="w-full h-full object-cover" src="/images/uploads/<%= elem.image %>"  alt="image"></a>
+               <h5 class="caption mt-1 ml-2 text-sm opacity-80">@<%= elem.user.username %></h5>
+               <h6 class="caption mt-1 ml-2 text-sm"><%= elem.title %></h6>
+     </div> 
+         
+     <% }); %>
+   
+   </div>
+       
+       
+       <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+         <script src="app.js"></script>
+   
+                     
+   
+</body>
+</html>
