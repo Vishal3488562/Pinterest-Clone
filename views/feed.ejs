@@ -31,8 +31,8 @@
     <% posts.forEach(function(elem)  { %> 
          
      <div class="box bg-white overflow-hidden">
-                   <a class="w-full h-full object-cover" href="/images/uploads/<%= elem.image %>">
-                   <img class="w-full h-full object-cover" src="/images/uploads/<%= elem.image %>"  alt="image"></a>
+                   <a class="w-full h-full object-cover" href="/images/<%= elem.image %>">
+                   <img class="w-full h-full object-cover" src="/images/<%= elem.image %>"  alt="image"></a>
                <h5 class="caption mt-1 ml-2 text-sm opacity-80">@<%= elem.user.username %></h5>
                <h6 class="caption mt-1 ml-2 text-sm"><%= elem.title %></h6>
      </div> 

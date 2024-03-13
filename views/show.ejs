@@ -6,8 +6,8 @@
     <% user.posts.forEach(function(elem)  { %>
       <div class="card w-32 relative">
         <div class="w-full h-40 bg-white rounded-lg overflow-hidden relative">
-          <a href="/images/uploads/<%= elem.image %>">
-            <img class="w-full h-full object-cover" src="/images/uploads/<%= elem.image %>" alt="">
+          <a href="/images/<%= elem.image %>">
+            <img class="w-full h-full object-cover" src="/images/<%= elem.image %>" alt="">
           </a>
         </div>
         <h5 class="mt-2 text-sm"><%= elem.title %></h5>
